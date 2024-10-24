@@ -56,7 +56,7 @@ app.use(
 
 // 2. **CORS (Cross-Origin Resource Sharing)** 
 const corsOptions = {
-  origin: process.env.CLIENT_URL,
+  origin: "*",
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Permite estos métodos
   allowedHeaders: ['Content-Type', 'Authorization'], // Permite estos headers
   credentials: true, 
